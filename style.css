@@ -1,5 +1,149 @@
+:root{
+    --background-color: #00209e;
+    --text-color: #ffffff;
+    --hover-text: #A9A9A9;
+}
+
 *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+header{
+    top: 0;
+    left: 0;
+    height: 12.5vh;
+    width: 100%;
+    z-index: 999;
+    background: var(--background-color);
+}
+
+header .topPage i{
+    position: fixed;
+    bottom: 7.5vh;
+    right: 7.5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: var(--background-color);
+    transition: 0.5s ease;
+}
+
+header .topPage i:hover{
+    transform: scale(150%);
+}
+
+.nav{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 300px;
+}
+
+.nav .list{
+    display: flex;
+    list-style: none;
+}
+
+.nav .list .list-item{
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.nav .list .list-item .list-link{
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5 ease;
+    color: var(--text-color);
+}
+
+.nav .list .list-item .list-link:hover{
+    color: var(--hover-text);
+}
+
+body{
     margin: 0;
     padding: 0;
+    font-family: 'Sofia Sans Condensed', sans-serif;;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.presentation .initial-img{
+    width: 800px;
+    height: 500px;
+    border-radius: 100px;
+    margin-right: 50px;
+}
+
+.presentation .description{
+    width: 680px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper{
+    max-width: 1200px;
+}
+
+.wrapper .carousel{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0px;
+    scroll-behavior: smooth;
+}
+
+.carousel img{
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    width: 1200px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.wrapper i{
+    text-align: center;
+    border-radius: 25%;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 162.5vh;
+    z-index: 100;
+    font-size: 45px;
+    cursor: pointer;
+    color: var(--hover-text);
+    background-color: rgba(0,32,158, 0.3);
+    transition: 0.3s ease;
+}
+
+.wrapper i:hover{
+    transform: scale(115%);
+    background-color: rgba(0,32,158, 0.7);
+}
+
+.wrapper i:first-child{
+    left: 40vh;
+}
+
+.wrapper i:last-child{
+    right: 40vh;
 }

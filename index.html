@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASA FIDALGO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
-        
+        <nav class="nav">
+            <a href="/index.html">
+                <img src="images/logo.png" width="125px" height="75px" alt="logo">
+            </a>
+            <ul class="list">
+                <li class="list-item">
+                    <a href="#presentation" class="list-link current">Apresentação</a>
+                </li>
+                <li class="list-item">
+                    <a href="#gallery" class="list-link">Galeria</a>
+                </li>
+                <li class="list-item">
+                    <a href="#reservations" class="list-link">Reservas</a>
+                </li>
+                <li class="list-item">
+                    <a href="#aboutUs" class="list-link">Sobre Nós</a>
+                </li>
+                <li class="list-item">
+                    <a href="#contacts" class="list-link">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="topPage"><i class="fa-regular fa-circle-up"></i></a>
     </header>
+    <main>
+        <section class="presentation" id="presentation">
+            <img src="images/img57.JPG" alt="initial_img" class="initial-img">
+            <p class="description">
+                A Casa Fidalgo é uma habitação turística inserida no meio rural.
+                Está localizada no Lugar de Calvos, Freguesia de Rossas, Concelho de Vieira do Minho, do Distrito de
+                Braga.
+                Encontra-se perto da Serras da Cabreira, Marão e Gerês.
+                O rio ave e rio Tâmega estão muito próximos, moldando toda a paisagem e natureza envolventes.
+            </p>
+        </section>
+        <section class="gallery" id="gallery">
+            <h1 class="gallery-tittle">GALERIA</h1>
+            <div class="wrapper">
+                <i id="leftArrow" class="fa-solid fa-caret-left"></i>
+                <div class="carousel">
+                    <img src="images/img2.jpg" alt="img2">
+                    <img src="images/img3.jpg" alt="img3">
+                    <img src="images/img4.JPG" alt="img4">
+                    <img src="images/img5.JPG" alt="img5">
+                    <img src="images/img6.jpg" alt="img6">
+                    <img src="images/img7.JPG" alt="img7">
+                    <img src="images/img8.JPG" alt="img8">
+                    <img src="images/img9.jpg" alt="img9">
+                </div>
+                <i id="rightArrow" class="fa-solid fa-caret-right"></i>
+            </div>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
+
 </html>
