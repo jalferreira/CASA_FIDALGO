@@ -2,6 +2,8 @@
     --background-color: #00209e;
     --text-color: #ffffff;
     --hover-text: #A9A9A9;
+    --rgbaBlue: rgba(0,32,158, 0.3);
+    --rgbaBlack: rgba(0,0,0,0.2);
 }
 
 *{
@@ -67,7 +69,8 @@ header .topPage i:hover{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Sofia Sans Condensed', sans-serif;;
+    background-color: var(--rgbaBlack);
+    font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
 .presentation{
@@ -82,6 +85,8 @@ body{
     height: 500px;
     border-radius: 100px;
     margin-right: 50px;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .presentation .description{
@@ -126,7 +131,7 @@ body{
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 162.5vh;
+    top: 170vh;
     z-index: 100;
     font-size: 45px;
     cursor: pointer;
@@ -146,4 +151,10 @@ body{
 
 .wrapper i:last-child{
     right: 40vh;
+}
+
+.gallery h1{
+    font-size: 50px;
+    margin-bottom: 100px;
+    color: var(--background-color);
 }
